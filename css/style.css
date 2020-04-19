@@ -126,4 +126,8 @@ h1{
     box-shadow: -2px 4px 4px rgba(148, 148, 148, .3);
 }
 
+.card img{
+    width: 250px;
+}
+
 /* FIM NOTICIAS SECTION */
