@@ -1,3 +1,5 @@
+/* INICIO RESETS */
+
 html, body, div, span, iframe,
 h1, h2, h3, h4, h5, h6, p, 
 a, img, ol, ul, li,
@@ -31,6 +33,7 @@ video {
 }
 
 html {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 100%; 
     -webkit-text-size-adjust: 100%; 
     -ms-text-size-adjust: 100%; 
@@ -59,4 +62,68 @@ fieldset {
     padding: 0;
 }
 
+/* FIM RESETS */
 
+
+/* INICIO NAVBAR */
+
+nav{
+    height: 80px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 4px rgba(148, 148, 148, .3);
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 5em;
+}
+
+nav ul li{
+    margin: 0 1em;
+    font-weight: bold;
+    color: #292929;
+    cursor: pointer;
+    transition: ease-in-out .2s;
+}
+
+nav ul li:hover{
+    color: #FF9B00;
+}
+
+.logo{
+    margin: 0 5em;
+}
+
+/* FIM NAVBAR */
+
+
+/* INICIO NOTICIAS SECTION */
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    box-shadow: -2px 4px 4px rgba(148, 148, 148, .3);
+}
+
+/* FIM NOTICIAS SECTION */
