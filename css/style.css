@@ -62,18 +62,73 @@ fieldset {
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+    outline: none;
+}
+
+svg{
+    width: 40px;
+    height: 40px;
+}
+
 /* FIM RESETS */
+
+/* INICIO ESTILOS GERAIS */
+
+.button{
+    background-image: linear-gradient(#FF7000, #FF9B00);
+    padding: 16px 32px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50px;
+    margin: 1em;
+    transition: ease-in-out .2s; 
+}
+
+.button:hover{
+    box-shadow: 0px 5px 15px rgba(255, 112, 0, 0.5);
+    transition: ease-in-out .2s; 
+}
+
+h1{
+    color: #292929;
+    font-size: 24px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+h1::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 5px;
+    background-color: #292929;
+    margin: 20px auto;
+}
+
+button{
+    border: 0px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* FIM ESTILOS GERAIS */
 
 
 /* INICIO NAVBAR */
 
 nav{
+    top: 0px;
+    width: 100%;
     height: 80px;
-    background: #fff;
+    background: #FF9B00;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 4px rgba(148, 148, 148, .3);
+    position: fixed;
 }
 
 nav ul{
@@ -82,19 +137,22 @@ nav ul{
     margin: 0 5em;
 }
 
-nav ul li{
+nav ul li a{
+    font-size: 14px; 
     margin: 0 1em;
     font-weight: bold;
     color: #292929;
     cursor: pointer;
     transition: ease-in-out .2s;
+    text-transform: uppercase;
 }
 
-nav ul li:hover{
-    color: #FF9B00;
+nav ul li a:hover{
+    color: #fff;
 }
 
 .logo{
+    width: 200px;
     margin: 0 5em;
 }
 
@@ -123,11 +181,140 @@ h1{
     flex-direction: column;
     align-items: center;
     width: 300px;
-    box-shadow: -2px 4px 4px rgba(148, 148, 148, .3);
+    box-shadow: -4px 4px 4px rgba(148, 148, 148, .3);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
 }
 
 .card img{
-    width: 250px;
+    max-width: 250px;
+    height: 150px;
+}
+
+.card h2{
+    font-size: 16px;
+    font-weight: bold;
+    color: #292929;
+    margin: 10px 0;
+    left: 0px;
+}
+
+.card p{
+    font-size: 12px;
+    color:#949494;
 }
 
 /* FIM NOTICIAS SECTION */
+
+
+/* INÍCIO SOBRE SECTION */
+
+.container-sobre{
+    display: flex;
+    margin-top: 4em;
+    color: #292929;
+}
+
+.container-sobre div p{
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.text-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2em;
+    
+}
+
+/* FIM SOBRE SECTION */
+
+
+/* INÍCIO CONTATO SECTION */
+.container-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: -4px 4px 4px rgba(148, 148, 148, .3);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+}
+
+form label{
+    color: #292929;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+input, textarea{
+    border: 1px solid rgba(148, 148, 148, .5);
+    width: 85%;
+    padding: 16px;
+    color: #292929;
+    border-radius: 10px;
+    margin: 1em 0;
+    outline: none;
+}
+
+textarea{
+    height: 100px;
+    resize: none;
+}
+
+
+
+/* FIM CONTATO SECTION */
+
+
+/* INÍCIO SAIBA MAIS SECTION */
+
+.container-saiba-mais{
+    width: 600px;
+    margin: 0 auto;
+} 
+
+.container-saiba-mais p{
+    font-weight: bold;
+    line-height: 1.5rem;
+}  
+
+.saiba-mais-cards{
+    display: flex;
+}
+
+.card-menor{
+    width: 200px;
+}
+
+/* FIM SAIBA MAIS SECTION */
+
+/* INÍCIO FOOTER */
+
+footer{
+    bottom: 0px;
+    height: 80px;
+    background: #FF9B00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0 5em;
+}
+
+footer p{
+    color: #fff;
+    font-weight: bold;
+}
+
+/* FIM FOOTER */
