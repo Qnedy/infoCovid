@@ -115,6 +115,25 @@ button{
     font-size: 16px;
 }
 
+.texto, .video, .audio{
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.texto{
+    background: #008000;
+}
+
+.video{
+    background: #ff0080;
+}
+
+.audio{
+    background: #ff0000;
+}
+
 /* FIM ESTILOS GERAIS */
 
 
@@ -203,6 +222,11 @@ h1{
 .card p{
     font-size: 12px;
     color:#949494;
+}
+
+.card span{
+    margin-right: 90%;
+    margin-bottom: 5px;
 }
 
 /* FIM NOTICIAS SECTION */
